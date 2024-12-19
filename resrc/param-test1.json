@@ -37,6 +37,15 @@
       // unsigned threadsPerBlockB = 8*warpsz;
       "threadsPerBlock": [ 256 ]
    },
+   "NwAlign_Gpu3_Ml_DiagDiag":
+   {
+      // // tile size for the kernel
+      // // +   tile A must have one dimension fixed to the number of threads in a warp
+      // unsigned tileAx = 40;
+      "tileAx": [ 40 ],
+      // unsigned tileAy = warpsz;
+      "tileAy": [ 32 ]
+   },
    "NwAlign_Gpu5_Coop_DiagDiag":
    {
       // // tile size for the kernel
